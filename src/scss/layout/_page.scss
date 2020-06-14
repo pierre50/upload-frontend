@@ -1,0 +1,57 @@
+.page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.page-container{
+    padding: 60px 100px;
+    box-sizing: border-box;
+    height: 100%;
+    .page-container__title{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .page-container__description{
+        margin-top: -40px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        align-self: stretch;
+    }
+    .page-container__team{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: -50px;
+        .team-user{
+            padding: 30px;
+            .team-user__img{
+                border-radius: 50%;
+                height: 200px;
+                width: 200px;
+            }
+            .team-user__name {
+                text-align: center;
+                font-size: 22px;
+            }
+            .team-user__job {
+                text-align: center;
+            }
+        }
+    }
+}
+.page-first{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-right: 360px;
+}
+.page-small{
+    height: 200px;
+}

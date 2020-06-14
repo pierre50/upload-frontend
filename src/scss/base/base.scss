@@ -1,0 +1,32 @@
+html{
+  height:100%;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #636b6f;
+  margin: 0;
+  height:100%;
+}
+
+#app{
+  height:100%;
+}
+
+.main{
+  height: calc(100% - 100px);
+  padding:20px;
+}
+
+.nopadding{
+  padding:0!important;
+}
+a {
+  text-decoration: none;
+}
+
+
+.cursor-pointer{
+  cursor: pointer;
+}

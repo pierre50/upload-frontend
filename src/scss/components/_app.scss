@@ -1,0 +1,35 @@
+.app {
+  margin-left: 300px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 52px auto;
+  overflow: hidden;
+  .app-header {
+    padding: 0px;
+    .app-header-menu {
+      background: $primary;
+      padding: 10px 20px;
+      display: grid;
+      align-items: center;
+      grid-gap: 10px;
+      grid-template-columns: auto 300px 150px 200px;
+      .el-input-search {
+        .el-input__inner {
+          background: rgba(0, 0, 0, 0.1);
+          border: none;
+          color: white;
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+        .el-input__prefix {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.file-content {
+  margin-left: auto;
+  width: 85%;
+  .el-header {
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  .el-main {
+    font-size: 16px;
+    padding-bottom: 45px;
+  }
+}
+
+.file-main {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 60px;
+  height: calc(100vh - 60px);
+  .file-main__preview {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    .file-preview {
+      height: 100%;
+      background: #f0f3f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.transparency {
+        background: white;
+        background-image: linear-gradient(
+            45deg,
+            #ccc 25%,
+            transparent 25%,
+            transparent 75%,
+            #ccc 75%,
+            #ccc
+          ),
+          linear-gradient(
+            45deg,
+            #ccc 25%,
+            transparent 25%,
+            transparent 75%,
+            #ccc 75%,
+            #ccc
+          );
+        background-size: 20px 20px;
+        background-position: 0 0, 30px 30px;
+      }
+      .file-preview__image {
+        img {
+          max-height: calc(100vh - 60px);
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      .file-preview__audio {
+      }
+      .file-preview__video {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: black;
+        .video-js {
+          width: 100%;
+          height: 100%;
+          button.vjs-big-play-button {
+            top: calc(50% - 0.75em);
+            left: calc(50% - 1.5em);
+          }
+        }
+      }
+      .file-preview__doc {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .file-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background: #f0f3f4;
+      .file-icon__main {
+        display: grid;
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+      }
+    }
+  }
+  .file-main__info {
+    height: 200px;
+    .file-info__header {
+      background: $primarydarker;
+      color: white;
+      height: auto !important;
+      padding: 5px 10px;
+    }
+    .file-info__body {
+      display: grid;
+      grid-template-rows: 20px 20px 20px 50px;
+      grid-gap: 5px;
+      padding: 20px;
+    }
+  }
+}

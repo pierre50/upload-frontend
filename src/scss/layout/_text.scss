@@ -1,0 +1,16 @@
+.text-smaller{
+  font-size: 12px;
+  color: $grey;
+}
+.text-bigger{
+  font-size: 50px; 
+  font-weight: bold;
+}
+.text-regular{
+
+}
+.text-ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

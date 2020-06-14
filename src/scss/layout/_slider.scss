@@ -1,0 +1,12 @@
+.size-slider{
+  margin-left: 10px;
+  .el-slider__runway{
+    .el-slider__bar{
+      background: $--color-primary;
+    }
+    .el-slider__button-wrapper:hover, .el-slider__button-wrapper.hover,
+    .el-slider__button:hover, .el-slider__button.hover{
+      cursor: default;
+    }
+  }
+}

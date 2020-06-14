@@ -1,0 +1,18 @@
+.file-list-content{
+  .file-list__header{
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-gap: 5px;
+    grid-template-columns: auto 100px 100px;
+  }
+  .dropping-zone{
+    width:100%;
+  }
+  .no-file-found{
+    position: absolute;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+// 1. Configuration and helpers
+@import
+'abstracts/animations',
+'abstracts/variables',
+'abstracts/themes';
+
+// 2. Themes
+$fa-font-path: "~font-awesome/fonts"; 
+@import
+"~element-ui/packages/theme-chalk/src/index",
+'~font-awesome/scss/font-awesome.scss';
+
+// 3. Base stuff
+@import 'base/base';
+
+// 4. Layout-related sections
+@import
+'layout/avatar',
+'layout/button',
+'layout/menu',
+'layout/page',
+'layout/sidemenu',
+'layout/slider',
+'layout/text',
+'layout/tree',
+'layout/upload';
+
+// 5. Components
+@import
+'components/app',
+'components/detail',
+'components/error',
+'components/file',
+'components/list',
+'components/dashboard';
+
+// 6. Page-specific styles
+

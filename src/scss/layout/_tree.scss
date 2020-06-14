@@ -1,0 +1,31 @@
+.el-tree {
+  height: calc(100vh - 52px - 52px);
+  overflow-y: auto;
+  &.small {
+    height: auto !important;
+    overflow-y: auto;
+  }
+  .el-tree-node__content{
+    padding-right:15px;
+  }
+  &.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+    background-color: #dbe8f5!important;
+  }
+  .el-tree-node__body {
+    &.dropping {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    display: grid;
+    grid-gap: 5px;
+    width: 100%;
+    grid-template-columns: 24px auto 80px 150px;
+    align-items: center;
+    .el-tree-node__size,
+    .el-tree-node__date {
+      justify-self: end;
+    }
+    i.fa {
+      padding: 0px 6px;
+    }
+  }
+}

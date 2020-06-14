@@ -1,0 +1,89 @@
+.dashboard{
+  position: fixed;
+  left: 0;
+  display: grid;
+  width: 300px;
+  grid-gap: 5px;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  grid-template-rows: 50px 50px 1fr 60px;
+  .link-selected{
+    width: fit-content;
+    padding: 5px 0;
+    border-bottom: 2px solid $--color-primary;
+  }
+  .text-smaller {
+    color: #bbbbbb;
+  }
+  .dashboard-user{
+    display: grid;
+    grid-template-columns: 40px auto;
+    .el-dropdown{
+      color:white;
+    }
+  }
+  .dashboard-item{
+    cursor: pointer;
+    padding: 10px;
+    align-items: center;
+    >a{
+      color: white;
+    }
+  }
+  .dashboard-uploads{
+    align-self: start;
+    .dashboard-uploads__nodata,
+    .dashboard-uploads__title{
+      padding:10px;
+    }
+  }
+}
+
+.dashboard-uploads__files{
+  height: calc( 100vh - 220px);
+  overflow-y: auto;
+  position: relative;
+  background: rgba(200,200,200,0.1);
+  .dashboard-file{
+    display: grid;
+    grid-template-columns: 160px 60px 10px;    
+    padding: 0 15px;
+    height: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 10px;
+    .dashboard-file-status{
+      .el-icon-error{
+        color: $--color-danger;
+      }
+      .el-icon-success{
+        color: $--color-success;
+      }
+    }
+    .dashboard-slider{
+      background: $--slider-runway-background-color;
+      border-radius: 5px;
+      overflow: hidden;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      .dashboard-slider-bar{
+        background: $--color-info;
+        height:5px;
+        background: $--color-success;
+      }
+    }
+  }
+}
+
+.dashboard-storage{
+  display: grid;
+  grid-template-columns: auto 70px;
+  grid-gap: 3px;
+  align-items: center;
+  .dashboard-storage-capacity{
+      justify-self: center;
+  }
+}
+
